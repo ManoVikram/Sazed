@@ -1,0 +1,6 @@
+grpcio
+grpcio-tools
+langchain
+langchain-openai
+python-dotenv
+langchain-community

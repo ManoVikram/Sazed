@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package servicepb;
+
+option go_package = "";
+
+message ResearchRequest {
+    string query = 1;
+}
+
+message ResearchResponse {
+    string summary = 1;
+    repeated string resources = 2;
+    string critique = 3;
+}
+
+service ResearchService {
+    rpc Research(ResearchRequest) returns (ResearchResponse);
+}

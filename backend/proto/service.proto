@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package servicepb;
 
-option go_package = "";
+option go_package = "github.com/ManoVikram/AI-Research-Assistant/backend/api";
 
 message ResearchRequest {
     string query = 1;

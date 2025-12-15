@@ -24,14 +24,14 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rservice.proto\x12\tservicepb\" \n\x0fResearchRequest\x12\r\n\x05query\x18\x01 \x01(\t\"H\n\x10ResearchResponse\x12\x0f\n\x07summary\x18\x01 \x01(\t\x12\x11\n\tresources\x18\x02 \x03(\t\x12\x10\n\x08\x63ritique\x18\x03 \x01(\t2V\n\x0fResearchService\x12\x43\n\x08Research\x12\x1a.servicepb.ResearchRequest\x1a\x1b.servicepb.ResearchResponseB\x02Z\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rservice.proto\x12\tservicepb\" \n\x0fResearchRequest\x12\r\n\x05query\x18\x01 \x01(\t\"H\n\x10ResearchResponse\x12\x0f\n\x07summary\x18\x01 \x01(\t\x12\x11\n\tresources\x18\x02 \x03(\t\x12\x10\n\x08\x63ritique\x18\x03 \x01(\t2V\n\x0fResearchService\x12\x43\n\x08Research\x12\x1a.servicepb.ResearchRequest\x1a\x1b.servicepb.ResearchResponseB9Z7github.com/ManoVikram/AI-Research-Assistant/backend/apib\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'service_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'Z\000'
+  _globals['DESCRIPTOR']._serialized_options = b'Z7github.com/ManoVikram/AI-Research-Assistant/backend/api'
   _globals['_RESEARCHREQUEST']._serialized_start=28
   _globals['_RESEARCHREQUEST']._serialized_end=60
   _globals['_RESEARCHRESPONSE']._serialized_start=62

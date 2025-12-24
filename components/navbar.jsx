@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 
 const Navbar = () => {
@@ -7,28 +9,28 @@ const Navbar = () => {
 
             <div className="flex flex-row w-1/2 pl-4">
                 <div className="flex flex-row justify-start items-center w-full gap-6">
-                    <div className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50">
+                    <button className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50 cursor-pointer" onClick={() => { }}>
                         <p>Research</p>
-                    </div>
+                    </button>
 
-                    <div className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50">
+                    <button className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50 cursor-pointer" onClick={() => { }}>
                         <p>Pricing</p>
-                    </div>
-                    
-                    <div className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50">
-                        <p>About</p>
-                    </div>
+                    </button>
 
-                    <div className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50">
+                    <button className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50 cursor-pointer" onClick={() => { }}>
+                        <p>About</p>
+                    </button>
+
+                    <button className="flex justify-center items-center px-4 py-2 rounded-full bg-gray-50 cursor-pointer" onClick={() => { }}>
                         <p>Contact</p>
-                    </div>
+                    </button>
                 </div>
 
-                <div className="flex flex-row justify-center items-center gap-2 px-4 py-2 rounded-full bg-black">
+                <button className="flex flex-row justify-center items-center gap-2 px-4 py-2 rounded-full bg-black cursor-pointer" onClick={() => { }}>
                     <div className="flex p-1 bg-green-600 rounded-full" />
 
                     <p className='font-montserrat-alternates text-white text-sm'>SUBSCRIBE</p>
-                </div>
+                </button>
             </div>
         </nav>
     )

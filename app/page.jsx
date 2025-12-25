@@ -10,7 +10,7 @@ export default function Home() {
         <main className="flex flex-row flex-1 p-4">
             <div className="flex flex-col flex-1 justify-center items-start rounded-2xl gap-8">
                 <div className="flex flex-col justify-start items-start gap-4">
-                    <p className="text-7xl">Research,<br />without the noise</p>
+                    <h1 className="text-7xl">Research,<br />without the noise</h1>
 
                     <p className="pr-24 text-gray-500">An AI-powered research assistant that searches, summarizes, and critiques information — so you can focus on thinking, not digging.</p>
                 </div>

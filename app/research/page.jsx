@@ -20,32 +20,32 @@ const ResearchPage = () => {
   }
 
   return (
-    <section className='flex flex-col flex-1 justify-center items-center p-6'>
-      <div className="flex flex-col flex-1 justify-center items-center w-2/3 gap-6">
+    <section className='flex flex-col h-dvh p-6'>
+      <div className="flex flex-col flex-1 justify-center items-center w-2/3 mx-auto min-h-0 gap-6">
         {researchData ? (
-          <div className="flex flex-row flex-1 w-full mt-16 gap-3">
-            <div className="flex flex-1 flex-col rounded-2xl p-3 border-2 border-gray-300 gap-4">
+          <div className="flex flex-row flex-1 w-full mt-16 min-h-0 gap-3">
+            <div className="flex flex-1 flex-col rounded-2xl p-4 border-2 border-gray-300 gap-4">
               <div className="flex justify-center items-start w-full">
                 <h3 className='text-2xl'>Research Summary</h3>
               </div>
 
-              <p className='font-montserrat-alternates text-gray-500 text-sm'>
+              <div className='font-montserrat-alternates text-gray-500 text-sm h-full min-h-0 overflow-y-auto [&::-webkit-scrollbar]:bg-transparent [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full'>
                 <ReactMarkdown>
                   {researchData.summary}
                 </ReactMarkdown>
-              </p>
+              </div>
             </div>
 
-            <div className="flex flex-1 flex-col rounded-2xl p-2 border-2 border-gray-300 gap-4">
+            <div className="flex flex-1 flex-col rounded-2xl p-4 border-2 border-gray-300 gap-4">
               <div className="flex justify-center items-start w-full">
                 <h3 className='text-2xl'>Research Critique</h3>
               </div>
 
-              <p className='font-montserrat-alternates text-gray-500 text-sm'>
+              <div className='font-montserrat-alternates text-gray-500 text-sm min-h-0 overflow-y-auto [&::-webkit-scrollbar]:bg-transparent [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full'>
                 <ReactMarkdown>
                   {researchData.critique}
                 </ReactMarkdown>
-              </p>
+              </div>
             </div>
           </div>
         ) : (

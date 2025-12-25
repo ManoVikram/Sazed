@@ -8,5 +8,5 @@ import (
 
 func RegisterRoutes(server *gin.Engine, services *services.Services) {
 	// POST request to ask questions to the AI research assistant
-	server.POST("/api/ask", handlers.ResearchHandler(services))
+	server.POST("/api/research", handlers.ResearchHandler(services))
 }

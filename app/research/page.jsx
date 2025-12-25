@@ -1,9 +1,11 @@
 "use client"
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 
 const ResearchPage = () => {
+  const [query, setQuery] = useState("")
+
   return (
     <section className='flex flex-col flex-1 justify-center items-center'>
       <div className="flex flex-col justify-center items-center w-full gap-8">
@@ -19,7 +21,7 @@ const ResearchPage = () => {
         </div>
 
         <div className="flex flex-col justify-start items-start w-2/3 px-6 py-3 bg-amber-50/80 rounded-3xl gap-6">
-          <input type="text" className='w-full text-lg outline-none ring-0 border-none' placeholder='Ask anything...' value="" onChange={() => { }} />
+          <input type="text" className='w-full text-lg outline-none ring-0 border-none' placeholder='Ask anything...' value={query} onChange={(event) => setQuery(event.target.value)} />
 
           <div className="flex justify-between items-center w-full">
             <div className="flex aspect-square h-10 w-10 rounded-lg relative cursor-pointer" onClick={() => { }}>

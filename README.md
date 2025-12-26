@@ -60,3 +60,5 @@ curl --location 'http://localhost:8080/api/ask' \
 ## UI
 
 ![Home Screen UI](/public/SazedAIResearchAssistantHomeScreenUI.png)
+
+https://github.com/user-attachments/assets/7807fb11-ccdd-4f6f-b62d-d00f1a027dac
